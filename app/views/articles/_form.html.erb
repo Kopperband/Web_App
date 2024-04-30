@@ -2,21 +2,24 @@
     <div>
         <%= form.label :title %><br>
         <%= form.text_field :title %><br>
-        <% @articles.errors.full_messages_for(:title).each do |message| %>
+        <% @article.errors.full_messages_for(:title).each do |message| %>
             <div><%= message %></div>
         <% end %>
     </div>
     <div>
         <%= form.label :body %><br>
         <%= form.text_area :body, size: "40x10" %><br>
-        <% @articles.errors.full_messages_for(:body).each do |message| %>
+        <% @article.errors.full_messages_for(:body).each do |message| %>
             <div><%= message %></div>
         <% end %>
     </div>
-    <%= form.submit "submit" %>
-    <%= link_to "Cancel", articles_path %>
+    <div >
+        <%= form.submit 'Submit' %>
+        <%= button_to "Cancel", articles_path %>
+        <% if @article.persisted?%>
+            <%= render "delete", article: @articles %>
+        <% end %>
+    </div>
 
-    <% if @articles.persisted? %>
-      <%= link_to 'Delete', @articles, method: :delete, data: { confirm: "Are you sure?"} %>
-    <% end %>
+
 <% end %>
