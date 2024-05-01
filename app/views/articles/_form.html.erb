@@ -1,4 +1,4 @@
-<%= form_with model: article do |form| %>
+<%= form_with model: article || Article.new do |form| %>
     <div>
         <%= form.label :title %><br>
         <%= form.text_field :title %><br>
@@ -14,12 +14,11 @@
         <% end %>
     </div>
     <div >
-        <%= form.submit 'Submit' %>
-        <%= button_to "Cancel", articles_path %>
+        <%= form.submit 'Submit', class: 'btn' %>
         <% if @article.persisted?%>
-            <%= render "delete", article: @articles %>
+            <%= render "delete", article: @article %>
         <% end %>
+        <%= link_to "Cancel", articles_path, method: :get, class: 'btn ' %>
+        
     </div>
-
-
 <% end %>
