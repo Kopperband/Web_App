@@ -1,11 +1,37 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
     background-color: #7dacce;
 }
 
+h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
 a{
+    font-size: 1.3rem 0.5;
+    color: white;
     text-decoration: none;
-    font-size: 1.2rem;
-    color:#fff;
+    
+    background-image: linear-gradient(#d99a5a, #d99a5a);
+    background-size:0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease ;
+
+}
+a:hover {
+    color:darkorange;
+    font-size: 1.4rem;
+    background-size: 100% 0.1em;
+    
+    
 }
 
 btn {

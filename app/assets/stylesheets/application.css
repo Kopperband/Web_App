@@ -14,11 +14,8 @@
  *= require_tree .
  *= require_self
  */
-
- @import "bootstrap";
-
  @import "layouts/header";
 
  @import "config/reset";
- 
+
  @import "layouts/container";

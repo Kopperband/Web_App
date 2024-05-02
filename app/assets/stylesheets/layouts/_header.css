@@ -1,4 +1,5 @@
 header {
+    margin:0;
     display:flex;
     background-color: #395d77;
     width: 100%;
@@ -8,7 +9,7 @@ header {
 }
 
 header .bx{
-    padding-left:1rem;
+    margin-left: 1rem;
     font-size: 3rem;
     color:white;
 }
@@ -24,12 +25,5 @@ padding-right:1rem;
     text-align: right;
     justify-content: right;
     margin-right: 2rem;
-}
-
-header li a{
-    font-size: 1.3rem;
-    color: white;
-    text-decoration: none;
-
 }
 
