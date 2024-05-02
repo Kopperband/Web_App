@@ -10,21 +10,24 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <%= stylesheet_link_tag "application.css" %>
+        <%= stylesheet_link_tag "application" %>
     </head>
     <body>
     <h1>Articles</h1>
     <p>Find me in app/views/articles/index.html.erb</p>
-
-    <ul>
-        <% @article.each do |article| %>
-            <li>
-                <%= article.title %><br>
-                <%= article.body %>
-                <%= link_to "Edit", edit_article_path(article) %>
-            </li>
-        <% end %>
-    </ul>
+    <section class= "articles-main">
+        <ul>
+            <% @article.each do |article| %>
+            <div>
+                <li>
+                    <h3><%= article.title %></h3><br>
+                    <%= article.body %>
+                    <%= link_to "Edit", edit_article_path(article) %>
+                </li>
+                </div>
+            <% end %>
+        </ul>
+    </section>
     <%= link_to "New Article", new_article_path%>
 
     <%= link_to "Home", pages_path %>
