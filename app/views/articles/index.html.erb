@@ -13,6 +13,7 @@
         <%= stylesheet_link_tag "application" %>
     </head>
     <body>
+    <div class="articles-container">
     <h1>Articles</h1>
     <p>Find me in app/views/articles/index.html.erb</p>
     <section class= "articles-main">
@@ -28,6 +29,7 @@
             <% end %>
         </ul>
     </section>
+    </div>
     <%= link_to "New Article", new_article_path%>
 
     <%= link_to "Home", pages_path %>
