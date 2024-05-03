@@ -1,7 +1,7 @@
 header {
     margin:0;
     display:flex;
-    background-color: #395d77;
+    background-color: var(--color-head-foot);
     width: 100%;
     height:5rem;
     justify-content: space-between;
@@ -11,7 +11,7 @@ header {
 header .bx{
     margin-left: 1rem;
     font-size: 3rem;
-    color:white;
+    color:var(--link-color-before);
 }
 
 .header-links{
@@ -27,3 +27,8 @@ padding-right:1rem;
     margin-right: 2rem;
 }
 
+footer {
+    background-color:var(--color-head-foot);
+    width: 100%;
+    height:10rem;
+}

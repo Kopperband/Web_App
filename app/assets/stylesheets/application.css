@@ -14,6 +14,7 @@
  *= require_tree .
  *= require_self
  */
+ @import "config/variables";
  @import "layouts/header";
 
  @import "config/reset";

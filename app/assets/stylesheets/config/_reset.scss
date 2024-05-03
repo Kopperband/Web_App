@@ -1,3 +1,6 @@
+
+
+
 *{
     margin: 0;
     padding:0;
@@ -5,7 +8,8 @@
 }
 
 body{
-    background-color: #7dacce;
+    background-color:var(--color-main);
+    height:80%;
 }
 
 h1 {
@@ -15,19 +19,21 @@ h1 {
 
 a{
     font-size: 1.3rem 0.5;
-    color: white;
+    color: var(--link-color-before);
     text-decoration: none;
     
-    background-image: linear-gradient(#d99a5a, #d99a5a);
+    background-image: linear-gradient(var(--link-color-hover), var(--link-color-hover));
     background-size:0% 0.1em;
     background-position-y: 100%;
     background-position-x: 0%;
     background-repeat: no-repeat;
-    transition: background-size 0.5s ease ;
+    transition: background-size 1s ease,
+     font-size 0.5s ease-in-out; ;
+    
 
 }
 a:hover {
-    color:darkorange;
+    color:var(--link-color-hover);
     font-size: 1.4rem;
     background-size: 100% 0.1em;
     
