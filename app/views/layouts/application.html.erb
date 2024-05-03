@@ -10,8 +10,6 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
-  <body class="background">
   <header>
     <i class='bx bx-book-content'></i>
     <div class= header-links>
@@ -24,7 +22,12 @@
     </div>
 
   </header>
+  <body class="background">
+
 
     <%= yield %>
   </body>
+
+    <footer class="footer">
+    </footer>
 </html>
