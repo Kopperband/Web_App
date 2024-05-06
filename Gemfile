@@ -4,6 +4,7 @@ ruby "3.3.1"
 
 gem "bootstrap"
 gem "dartsass-sprockets"
+gem "rubocop"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.2"

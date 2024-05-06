@@ -18,9 +18,9 @@
  as well as any variables for the application
  */
  
- @import "config/variables";
+ /*@import "config/variables";
  @import "layouts/header";
 
- @import "config/reset";
+ */@import "config/reset";
 
  @import "layouts/container";

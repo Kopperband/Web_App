@@ -1,7 +1,7 @@
 header {
     margin-bottom:2rem;
     display:flex;
-    background-color: var(--color-head-foot);
+    background-color: var(--color-30);
     width: 100%;
     height:5rem;
     justify-content: space-between;
@@ -10,16 +10,16 @@ header {
 }
 
 header .bx{
-    margin-left: 1rem;
+    margin-left: 2rem;
     font-size: 3rem;
-    color:var(--link-color-before);
+    color:var(--color-10);
 }
 
 .header-links{
 display:inline-flex;
 justify-content: right;
 align-items: center;
-padding-right:1rem;
+margin-right:3rem;
 }
 
  header li{
@@ -29,8 +29,4 @@ padding-right:1rem;
 }
 
 
-footer {
-    background-color:var(--color-head-foot);
-    width: 100%;
-    height:10rem;
-}
+
