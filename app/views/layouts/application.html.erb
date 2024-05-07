@@ -19,6 +19,9 @@
       <li>
         <%= link_to "Articles", articles_path %>
       </li>
+      <li>
+        <%= link_to "Contact Us!", new_contact_path %>
+      </li>
     </div>
   
 
@@ -29,16 +32,27 @@
 
       <%= yield %>
     <footer>
-          <div class="footer-left">
+          <div class="footer-left footer">
             <h2> Contact Us</h2>
               <address class="address">
-                100 Rockcrest dr<br>
+                100 Rockcrest Dr<br>
                 Hammonds Plains, NS<br>
                 B4B 1Y6
               </address>
           </div>
-          <div class="footer-right">
+          <div class = "footer-middle footer">
+          <h2> Say Hello </h2>
+
+
+          </div>
+          <div class="footer-right footer">
           <h2> Social Media </h2>
+            <div class="socials">
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bxl-github'></i>
+            <i class='bx bxl-linkedin'></i>
+            <i class='bx bxl-youtube'></i>
+            </div>
           </div>
     </footer>
 
