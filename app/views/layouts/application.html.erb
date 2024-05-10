@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blog Site</title>
+    <title>Article Area</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -27,11 +27,13 @@
 
   </header>
   <body class="background">
+  <div class="main-body">
 
 
-
-      <%= yield %>
+    <%= yield %>
+  </div>
     <footer>
+      <div class="footer-cont">
           <div class="footer-left footer">
             <h2> Contact Us</h2>
               <address class="address">
@@ -40,20 +42,28 @@
                 B4B 1Y6
               </address>
           </div>
-          <div class = "footer-middle footer">
-          <h2> Say Hello </h2>
+            <div class = "footer-middle footer">
+              <div id="say-hello">
+                <h2> Say Hello </h2>
+                <input type="email" placeholder="email"/>
+              </div>
 
-
-          </div>
+            </div>
           <div class="footer-right footer">
-          <h2> Social Media </h2>
-            <div class="socials">
-            <i class='bx bxl-facebook'></i>
-            <i class='bx bxl-github'></i>
-            <i class='bx bxl-linkedin'></i>
-            <i class='bx bxl-youtube'></i>
+            <h2> Social Media </h2>
+              <div class="socials">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+              </div>
+          </div>
+        
+            <div class="copyright footer">
+              Created by Nathan Hansford 2024
             </div>
           </div>
+
     </footer>
 
   </body>
